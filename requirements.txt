@@ -1,0 +1,17 @@
+numpy
+pandas
+scipy
+matplotlib
+uproot
+awkward
+vector
+hist
+mplhep
+pyyaml
+aiohttp
+requests
+psutil
+iminuit
+scikit-learn
+xgboost
+zfit

@@ -1,0 +1,34 @@
+# Selección Z -> mu mu (semana 4). Los cortes se aplican EN ESTE ORDEN.
+# Los cortes viven aquí, no en el código: el notebook solo lee este archivo.
+
+# TODO (E4.1): ramas que se leen de datos y de MC (mira la lista en el programa).
+ramas:
+  - nMuon
+  - Muon_pt
+  # - ...
+
+# TODO (E4.6): ramas que solo existen en simulación (truth information):
+# genWeight, Muon_genPartIdx y las GenPart_* que necesites.
+ramas_mc: []
+
+n_eventos: 300000    # entry_stop para desarrollar
+
+# TODO (E4.2): completa la lista con los cortes del programa.
+# Formato de cada corte por muon:
+#   nombre:   texto que aparece en la tabla de cortes
+#   variable: campo del muon (sin el prefijo Muon_)
+#   op:       ">", ">=", "<", "<=", "==" o "bool" (para variables booleanas como tightId)
+#   valor:    umbral (no hace falta con op: bool)
+#   abs:      true si el corte es sobre el valor absoluto
+cortes_muon:
+  - {nombre: "pT > 25 GeV", variable: pt, op: ">", valor: 25.0}
+
+cortes_evento:
+  exactamente_dos: true
+  carga_opuesta: true
+  ventana_masa: [70.0, 110.0]
+
+# Regiones de η para comparar resoluciones (E3.8 y E4.7)
+regiones_eta:
+  barril: 0.9        # ambos muones con |η| < 0.9
+  endcap: 1.2        # ambos muones con |η| > 1.2

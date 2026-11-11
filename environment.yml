@@ -1,0 +1,27 @@
+name: hep-ss
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - uproot
+  - awkward
+  - vector
+  - hist
+  - mplhep
+  - pyyaml
+  - aiohttp
+  - requests
+  - psutil
+  - fsspec-xrootd
+  - nbstripout
+  - iminuit
+  - scikit-learn
+  - xgboost
+  - pip
+  - pip:
+      - zfit
+      - -e .
