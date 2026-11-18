@@ -1,0 +1,11 @@
+# Rutas de las muestras. Si una lista está vacía o no se puede leer,
+# hepss usa automáticamente los datos sintéticos (y lo avisa).
+dimuon2012:
+  - https://opendata.cern.ch/eos/opendata/cms/derived-data/AOD2NanoAODOutreachTool/Run2012BC_DoubleMuParked_Muons.root
+  - root://eospublic.cern.ch//eos/opendata/cms/derived-data/AOD2NanoAODOutreachTool/Run2012BC_DoubleMuParked_Muons.root
+
+# Semana 4: el supervisor elige UN archivo de cada muestra en https://opendata.cern.ch
+# (buscar "DoubleMuon Run2016" y "DYJetsToLL_M-50 NanoAODv9"), copia el enlace
+# HTTPS del archivo (empieza por https://opendata.cern.ch/eos/opendata/cms/...) y lo pega aquí.
+datos2016: []
+mc2016: []
